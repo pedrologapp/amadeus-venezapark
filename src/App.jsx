@@ -462,11 +462,6 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-              </div>    
-              O aluno não precisa vir com fardamento.
-            </div>
           </div>
         </div>
       </section>
@@ -947,6 +942,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
