@@ -502,7 +502,7 @@ function App() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Lanche: churros, pizzas, salgadinhos, além de suco ou refrigerante;
+                      Transporte ida e volta.
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-accent mr-2" />
@@ -947,6 +947,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
