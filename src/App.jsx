@@ -368,9 +368,9 @@ function App() {
       <section id="itinerario" className="section-padding bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Programação do Evento</h2>
+            <h2 className="text-4xl font-bold mb-4">Sobre o passeio</h2>
             <p className="text-lg text-muted-foreground">
-              Confira o cronograma do nosso passeio
+              Confira as informações do nosso passeio
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -423,6 +423,22 @@ function App() {
                 </ul>
               </CardContent>
             </Card>
+            <Card className="card-hover">
+              <CardHeader className="text-center">
+                <div className="mx-auto mb-4 p-3 bg-red-500/10 rounded-full w-fit">
+                  <Utensils className="h-8 w-8 text-green-500" />
+                </div>
+                <CardTitle>NÃO é Permitidos</CardTitle>
+                <CardDescription>Regras</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm list-disc list-inside space-y-1 text-left">
+                  <li>Não é permitido o manuseio de alimentos in natura</li>
+                  <li>Não serão aceitos: embalagens não industriais, recipientes ou embalagens de vidro, coolers, isopores, garrafas PET (exceto água), objetos cortantes ou perfurantes.</li>
+                </ul>
+              </CardContent>
+            </Card>
+			  
           </div>
           {/*
           <div className="mt-12 text-center">
@@ -444,25 +460,7 @@ function App() {
           <div className="mt-8 p-6 bg-accent/10 rounded-lg border border-accent/20">
             <div className="space-y-4">
               
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm">
-					Não é permitido o manuseio de alimentos in natura
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm">
-                   Não serão aceitos: embalagens não industriais, recipientes ou embalagens de vidro, coolers, isopores, garrafas PET (exceto água), objetos cortantes ou perfurantes.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
+			<div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
@@ -483,7 +481,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    O aluno pode ir com roupas normais apropriadas.
+                   Almoço e lanche poderão ser comprados no park.
                   </p>
                 </div>
               </div>    
@@ -620,13 +618,21 @@ function App() {
                             className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm"
                           >
                             <option value="">Selecione a série</option>
-                            <option value="Maternal II">Maternal II</option>
+                           {/* 
+							<option value="Maternal II">Maternal II</option>
                             <option value="Maternal III">Maternal III</option>
                             <option value="Grupo 4">Grupo 4</option>
                             <option value="Grupo 5">Grupo 5</option>
                             <option value="1º Ano">1º Ano</option>
                             <option value="2º Ano">2º Ano</option>
                             <option value="3º Ano">3º Ano</option>
+							*/}
+							<option value="4º Ano">4º Ano</option>
+							<option value="5º Ano">5º Ano</option>
+							<option value="6º Ano">6º Ano</option>
+							<option value="7º Ano">7º Ano</option>
+							<option value="8º Ano">8º Ano</option>
+							<option value="9º Ano">9º Ano</option>
                           </select>
                         </div>
                         {/* 
@@ -823,7 +829,7 @@ function App() {
                           <div className="flex items-center space-x-2">
                             <span className="text-lg font-bold">PIX</span>
                             <span className="text-sm">
-                              R$ {(80).toFixed(2).replace('.', ',')} (sem taxas)
+                              R$ {(250).toFixed(2).replace('.', ',')} (sem taxas)
                             </span>
                           </div>
                         </div>
@@ -866,7 +872,9 @@ function App() {
                           className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm mt-2"
                         >
                           <option value={1}>1x de R$ {(valorTotal / 1).toFixed(2).replace('.', ',')}</option>          
-                          <option value={2}>2x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>
+                          <option value={2}>2x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>					        
+                          <option value={3}>3x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>						        
+                          <option value={4}>4x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>
                         </select>
                       </div>
                     )}
@@ -967,6 +975,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
