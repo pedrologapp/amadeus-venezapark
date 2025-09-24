@@ -26,7 +26,8 @@ import {
   X,
   Plus,
   Minus,
-  UserPlus
+  UserPlus,
+  Utensils  
 } from 'lucide-react';
 // Importando as imagens
 import interiorImage1 from './assets/happy1.jpg';
@@ -971,6 +972,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
