@@ -379,7 +379,7 @@ function App() {
                 <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>Data e Horário/CardTitle>
+                <CardTitle>Data e Horário</CardTitle>
                 <CardDescription>Horário</CardDescription>
               </CardHeader>
               <CardContent>
@@ -947,6 +947,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
