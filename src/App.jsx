@@ -296,7 +296,7 @@ function App() {
             Veneza Water Park
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Em comemoração ao Dia da Criança, realizaremos um passeio especial para o Veneza Park Aquático, em Recife.
+            Em comemoração ao Dia da Criança, realizaremos um passeio especial para o Veneza Park Aquático!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -947,6 +947,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
