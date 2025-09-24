@@ -506,7 +506,7 @@ function App() {
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Transporte incluso.
+                      Entrada para o park.
                     </li>
                   </ul>
                 </div>
@@ -947,6 +947,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
