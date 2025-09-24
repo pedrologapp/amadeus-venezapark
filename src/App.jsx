@@ -448,12 +448,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                     Lanches Permitidos para Entrada no Parque
-	•	Biscoitos, salgadinhos, sucos de caixinha e frutas
-	•	Bolos (comemorativos ou em fatias)
-	•	Água mineral em garrafas próprias
-	•	Refrigerantes ou bebidas alcoólicas em lata
-	•	Todos os itens devem ser transportados em bolsas ou bolsas térmicas
+					Não é permitido o manuseio de alimentos in natura
                   </p>
                 </div>
               </div>
@@ -462,7 +457,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                   O lanche está incluído, contendo churros, pizzas, salgadinhos, além de suco ou refrigerante.
+                   Não serão aceitos: embalagens não industriais, recipientes ou embalagens de vidro, coolers, isopores, garrafas PET (exceto água), objetos cortantes ou perfurantes.
                   </p>
                 </div>
               </div>
@@ -488,7 +483,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    O aluno deverá ir com a farda da escola.
+                    O aluno pode ir com roupas normais apropriadas.
                   </p>
                 </div>
               </div>    
@@ -972,6 +967,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
