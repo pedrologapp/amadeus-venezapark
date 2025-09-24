@@ -98,7 +98,7 @@ function App() {
 
   // Cálculo de preço atualizado
   const calculatePrice = () => {
-    const PRECO_BASE = 80.0;
+    const PRECO_BASE = 250.0;
     
     let valorTotal = PRECO_BASE;
     
@@ -206,7 +206,7 @@ function App() {
           installments: formData.installments,
           amount: valorTotal,
           timestamp: new Date().toISOString(),
-          event: 'Amadeus-diadascriancas'
+          event: 'Amadeus-venezapark'
         })
       });
 
@@ -293,10 +293,10 @@ function App() {
       <section className="hero-section min-h-screen flex items-center justify-center text-white relative">
         <div className="text-center z-10 max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Dia das Crianças
+            Veneza Water Park
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Em comemoração ao Dia da Criança, realizaremos um passeio especial para o Happy Day!
+            Em comemoração ao Dia da Criança, realizaremos um passeio especial para o Veneza Park Aquático, em Recife.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -311,11 +311,11 @@ function App() {
           <div className="mt-12 flex justify-center items-center space-x-8 text-sm">
             <div className="flex items-center">
               <Calendar className="h-5 w-5 mr-2" />
-              16 de Outubro de 2025 - das 13h às 17h
+              18 de Outubro de 2025 - dia todo.
             </div>
             <div className="flex items-center">
               <MapPin className="h-5 w-5 mr-2" />
-              Buffet Infantíl Happy Day
+              Veneza Water Park, Pernambuco.
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 gradient-text">Sobre o Evento</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-             O Happy Day é o buffet infantil mais completo de Natal, com um parque de diversões interno repleto de brinquedos incríveis e uma deliciosa variedade gastronômica para as crianças.
+             o Veneza Water Park é o maior parque aquático de Pernambuco. Com 90 mil metros quadrados de área, um complexo gastronômico para todos os gostos e mais de trinta atrações entre radicais e relaxantes, o parque compõe o equipamento turístico mais importante do estado.
             </p>
           </div>
 
@@ -337,19 +337,19 @@ function App() {
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
-                  <p>Espaço reservado exclusivamente para a escola</p>
+                  <p>Espaço com segurança e comodidade</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
-                  <p>Diversão garantida com jogos e atividades</p>
+                  <p>praça de alimentação com oito lanchonetes</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
-                  <p>Segurança reforçada com local fechado à escola </p>
+                  <p>Posto médico que conta com médico, paramédico, enfermeira e ambulância de plantão</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
-                  <p>Experiência de lazer e integração</p>
+                  <p>Diversão, segurança e tranquilidade</p>
                 </div>
               </div>
             </div>
@@ -379,12 +379,15 @@ function App() {
                 <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>13:00</CardTitle>
+                <CardTitle>Data e Horário/CardTitle>
                 <CardDescription>Horário</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-center">
-                  Saída do Amadeus às 13h, com retorno previsto para às 17h.
+                  Saída: 03h da manhã
+                </p>
+                   <p className="text-sm text-center">
+                	Retorno previsto: 23h do mesmo dia
                 </p>
               </CardContent>
             </Card>
@@ -398,7 +401,7 @@ function App() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-center">
-                  Buffet Infantíl Happy Day - R. Isaac Pímentel, 2010 - Lagoa Nova, Natal - RN
+                  Veneza Water Park - Avenida Dr. Claudio José Gueiros Leite, 10050, Maria Farinha, Paulista – PE
                 </p>
               </CardContent>
             </Card>
@@ -437,7 +440,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                   O lanche está incluído, contendo churros, pizzas, salgadinhos, além de suco ou refrigerante.
+                   Não serão aceitos: embalagens não industriais, recipientes ou embalagens de vidro, coolers, isopores, garrafas PET (exceto água), objetos cortantes ou perfurantes.
                   </p>
                 </div>
               </div>
@@ -446,7 +449,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                  O transporte também está incluso no pacote.  
+                  Não é permitido o manuseio de alimentos in natura
                   </p>
                 </div>
               </div>
@@ -455,17 +458,12 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    O não comparecimento do aluno no dia do evento não acarretará em reembolso do valor pago. 
+                    O não comparecimento do aluno no dia do evento não acarretará em reembolso do valor pago, a não ser mediante atestado. 
                   </p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                <div>
-                  <p className="text-sm">
-                    O aluno deverá ir com a farda da escola.
-                  </p>
-                </div>
               </div>    
           
             </div>
@@ -480,13 +478,13 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Inscrição e Taxa</h2>
             <p className="text-lg text-muted-foreground">
-              Valor único por Aluno
+              Valor único por Aluno - À vista ou em até 4x no cartão. 
             </p>
           </div>
 
           <Card className="mb-8">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-primary">R$ 80,00</CardTitle>
+              <CardTitle className="text-3xl text-primary">R$ 250,00</CardTitle>
               <CardDescription>por aluno</CardDescription>
               {/* 
               <div className="mt-4 p-3 bg-blue-50 rounded-lg">
@@ -949,6 +947,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
