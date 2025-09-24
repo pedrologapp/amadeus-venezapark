@@ -539,7 +539,7 @@ function App() {
                     </li>
                     <li className="flex items-start">
                       <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      O aluno deverá vir com o fardamento da escola.
+                      O fardamento da escola não será usado nesse passeio, roupas apropriadas livre.
                     </li>
                   </ul>
                 </div>
@@ -967,6 +967,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
