@@ -6,6 +6,7 @@ import { Badge } from './components/ui/badge';
 import { Separator } from './components/ui/separator';
 import { Input } from './components/ui/input';
 import { Label } from './components/ui/label';
+import { Clock, MapPin, Utensils } from "lucide-react";
 
 import { 
   MapPin, 
@@ -971,6 +972,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
