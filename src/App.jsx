@@ -361,9 +361,9 @@ function App() {
           </div>
         </div>
       </section>
+
       
-      
-      {/* Itinerário */}
+    {/* Itinerário */}
       <section id="itinerario" className="section-padding bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -372,7 +372,6 @@ function App() {
               Confira o cronograma do nosso passeio
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="card-hover">
               <CardHeader className="text-center">
@@ -386,8 +385,8 @@ function App() {
                 <p className="text-sm text-center">
                   Saída: 03h da manhã
                 </p>
-                   <p className="text-sm text-center">
-                	Retorno previsto: 23h do mesmo dia
+                <p className="text-sm text-center">
+                  Retorno previsto: 23h do mesmo dia
                 </p>
               </CardContent>
             </Card>
@@ -405,8 +404,26 @@ function App() {
                 </p>
               </CardContent>
             </Card>
+            <Card className="card-hover">
+              <CardHeader className="text-center">
+                <div className="mx-auto mb-4 p-3 bg-green-500/10 rounded-full w-fit">
+                  <Utensils className="h-8 w-8 text-green-500" />
+                </div>
+                <CardTitle>Lanches Permitidos</CardTitle>
+                <CardDescription>Para entrada no parque</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm list-disc list-inside space-y-1 text-left">
+                  <li>Biscoitos, salgadinhos, sucos de caixinha e frutas</li>
+                  <li>Bolos (comemorativos ou em fatias)</li>
+                  <li>Água mineral em garrafas próprias</li>
+                  <li>Refrigerantes ou bebidas alcoólicas em lata</li>
+                  <li>Todos os itens devem ser transportados em bolsas ou bolsas térmicas</li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
-           {/*
+          {/*
           <div className="mt-12 text-center">
             <div className="inline-flex items-center space-x-2 bg-white p-4 rounded-lg shadow-sm">
               <Bus className="h-5 w-5 text-primary" />
@@ -416,8 +433,7 @@ function App() {
           */}
         </div>
       </section>
-
-      {/* Documentação */}
+  {/* Documentação */}
       <section id="documentacao" className="section-padding bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
@@ -431,7 +447,12 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    Neste dia não haverá aula na escola, apenas o passeio.  
+                     Lanches Permitidos para Entrada no Parque
+	•	Biscoitos, salgadinhos, sucos de caixinha e frutas
+	•	Bolos (comemorativos ou em fatias)
+	•	Água mineral em garrafas próprias
+	•	Refrigerantes ou bebidas alcoólicas em lata
+	•	Todos os itens devem ser transportados em bolsas ou bolsas térmicas
                   </p>
                 </div>
               </div>
@@ -440,7 +461,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                   Não serão aceitos: embalagens não industriais, recipientes ou embalagens de vidro, coolers, isopores, garrafas PET (exceto água), objetos cortantes ou perfurantes.
+                   O lanche está incluído, contendo churros, pizzas, salgadinhos, além de suco ou refrigerante.
                   </p>
                 </div>
               </div>
@@ -449,7 +470,7 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                  Não é permitido o manuseio de alimentos in natura
+                  O transporte está incluso no pacote.  
                   </p>
                 </div>
               </div>
@@ -458,15 +479,23 @@ function App() {
                 <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
                 <div>
                   <p className="text-sm">
-                    O não comparecimento do aluno no dia do evento não acarretará em reembolso do valor pago, a não ser mediante atestado. 
+                    O não comparecimento do aluno no dia do evento não acarretará em reembolso do valor pago. 
                   </p>
                 </div>
               </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p className="text-sm">
+                    O aluno deverá ir com a farda da escola.
+                  </p>
+                </div>
+              </div>    
+          
+            </div>
           </div>
         </div>
       </section>
-
-        
       {/* Custos e Pagamento */}
       <section id="custos" className="section-padding bg-white">
         <div className="container mx-auto max-w-4xl">
@@ -942,6 +971,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
