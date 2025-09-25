@@ -490,90 +490,8 @@ function App() {
           </div>
         </div>
       </section>
-      {/* Custos e Pagamento */}
-      <section id="custos" className="section-padding bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Inscrição e Taxa</h2>
-            <p className="text-lg text-muted-foreground">
-              Valor único por Aluno - À vista ou em até 4x no cartão. 
-            </p>
-          </div>
 
-          <Card className="mb-8">
-            <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-primary">R$ 250,00</CardTitle>
-              <CardDescription>por aluno</CardDescription>
-              {/* 
-              <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-                <p className="text-sm text-blue-800">
-                  <UserPlus className="inline h-4 w-4 mr-1" />
-                  <strong>Acompanhantes adicionais:</strong> R$ 20,00 cada 
-                </p>
-              </div>
-             */}
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3 text-accent">O que está incluído:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Transporte ida e volta.
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
-                      Entrada para o park.
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-3 text-destructive">Informações importantes:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      Pagamento obrigatório até 14 de Outubro de 2025;
-                    </li>
-                    <li className="flex items-start">
-                      <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
-                      O fardamento da escola não será usado nesse passeio, roupas apropriadas livre.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              
-              <Separator className="my-6" />
-              
-              <div className="text-center">
-                {!showForm ? (
-                  <Button 
-                    size="lg" 
-                    className="bg-orange-600 hover:bg-orange-700 px-8 py-3"
-                    onClick={showInscricaoForm}
-                  >
-                    Realizar Inscrição e Pagamento
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                ) : (
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="px-8 py-3"
-                    onClick={() => setShowForm(false)}
-                  >
-                    <X className="mr-2 h-4 w-4" />
-                    Fechar Formulário
-                  </Button>
-                )}
-                <p className="text-xs text-muted-foreground mt-2">
-                  {!showForm ? 'Preencha seus dados e escolha a forma de pagamento' : 'Clique acima para fechar o formulário'}
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-		{/* Alimentação Opcional */}
+				{/* Alimentação Opcional */}
       <section id="alimentacao" className="section-padding bg-white">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
@@ -665,6 +583,90 @@ function App() {
      
         </div>
       </section>
+		
+      {/* Custos e Pagamento */}
+      <section id="custos" className="section-padding bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Inscrição e Taxa</h2>
+            <p className="text-lg text-muted-foreground">
+              Valor único por Aluno - À vista ou em até 4x no cartão. 
+            </p>
+          </div>
+
+          <Card className="mb-8">
+            <CardHeader className="text-center">
+              <CardTitle className="text-3xl text-primary">R$ 250,00</CardTitle>
+              <CardDescription>por aluno</CardDescription>
+              {/* 
+              <div className="mt-4 p-3 bg-blue-50 rounded-lg">
+                <p className="text-sm text-blue-800">
+                  <UserPlus className="inline h-4 w-4 mr-1" />
+                  <strong>Acompanhantes adicionais:</strong> R$ 20,00 cada 
+                </p>
+              </div>
+             */}
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-3 text-accent">O que está incluído:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Transporte ida e volta.
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-accent mr-2" />
+                      Entrada para o park.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 text-destructive">Informações importantes:</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
+                      Pagamento obrigatório até 14 de Outubro de 2025;
+                    </li>
+                    <li className="flex items-start">
+                      <Shield className="h-4 w-4 text-destructive mr-2 mt-0.5" />
+                      O fardamento da escola não será usado nesse passeio, roupas apropriadas livre.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <Separator className="my-6" />
+              
+              <div className="text-center">
+                {!showForm ? (
+                  <Button 
+                    size="lg" 
+                    className="bg-orange-600 hover:bg-orange-700 px-8 py-3"
+                    onClick={showInscricaoForm}
+                  >
+                    Realizar Inscrição e Pagamento
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                ) : (
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="px-8 py-3"
+                    onClick={() => setShowForm(false)}
+                  >
+                    <X className="mr-2 h-4 w-4" />
+                    Fechar Formulário
+                  </Button>
+                )}
+                <p className="text-xs text-muted-foreground mt-2">
+                  {!showForm ? 'Preencha seus dados e escolha a forma de pagamento' : 'Clique acima para fechar o formulário'}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
 			
 
           {/* FORMULÁRIO DE INSCRIÇÃO - SHOW/HIDE */}
@@ -1069,6 +1071,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
