@@ -969,8 +969,8 @@ function App() {
                         >
                           <option value={1}>1x de R$ {(valorTotal / 1).toFixed(2).replace('.', ',')}</option>          
                           <option value={2}>2x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>					        
-                          <option value={3}>3x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>						        
-                          <option value={4}>4x de R$ {(valorTotal / 2).toFixed(2).replace('.', ',')}</option>
+                          <option value={3}>3x de R$ {(valorTotal / 3).toFixed(2).replace('.', ',')}</option>						        
+                          <option value={4}>4x de R$ {(valorTotal / 4).toFixed(2).replace('.', ',')}</option>
                         </select>
                       </div>
                     )}
@@ -1071,6 +1071,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
