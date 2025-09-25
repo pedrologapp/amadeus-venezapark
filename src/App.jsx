@@ -425,8 +425,8 @@ function App() {
             </Card>
             <Card className="card-hover">
               <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-red-500/10 rounded-full w-fit">
-                  <Utensils className="h-8 w-8 text-green-500" />
+                <div className="mx-auto mb-4 p-3 bg-white-500/10 rounded-full w-fit">
+                  <Utensils className="h-8 w-8 text-red-500" />
                 </div>
                 <CardTitle>NÃO é Permitidos</CardTitle>
                 <CardDescription>Regras</CardDescription>
@@ -975,6 +975,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
