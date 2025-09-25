@@ -27,7 +27,9 @@ import {
   Plus,
   Minus,
   UserPlus,
-  Utensils  
+  Utensils,
+  XCircle,      // <- Adicione este
+  AlertTriangle
 } from 'lucide-react';
 // Importando as imagens
 import interiorImage1 from './assets/happy1.jpg';
@@ -1071,6 +1073,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
