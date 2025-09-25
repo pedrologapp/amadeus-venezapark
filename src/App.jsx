@@ -101,7 +101,7 @@ function App() {
 
   // Cálculo de preço atualizado
   const calculatePrice = () => {
-    const PRECO_BASE = 250.0;
+    const PRECO_BASE = 280.0;
     
     let valorTotal = PRECO_BASE;
     
@@ -601,7 +601,7 @@ function App() {
 
           <Card className="mb-8">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl text-primary">R$ 250,00</CardTitle>
+              <CardTitle className="text-3xl text-primary">R$ 280,00</CardTitle>
               <CardDescription>por aluno</CardDescription>
               {/* 
               <div className="mt-4 p-3 bg-blue-50 rounded-lg">
@@ -930,7 +930,7 @@ function App() {
                           <div className="flex items-center space-x-2">
                             <span className="text-lg font-bold">PIX</span>
                             <span className="text-sm">
-                              R$ {(250).toFixed(2).replace('.', ',')} (sem taxas)
+                              R$ {(280).toFixed(2).replace('.', ',')} (sem taxas)
                             </span>
                           </div>
                         </div>
@@ -1076,6 +1076,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
