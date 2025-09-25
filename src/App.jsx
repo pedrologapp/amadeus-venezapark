@@ -578,10 +578,30 @@ function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Alimentação Opcional</h2>
-            <p className="text-lg text-muted-foreground">
-              Garanta sua refeição no parque com valores especiais
-            </p>
           </div>
+
+		     <Card className="bg-yellow-50 border-yellow-200">
+            <CardContent className="p-6">
+              <div className="flex items-start space-x-3 mb-4">
+                <Shield className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-yellow-800 mb-2">Informações Importantes</h3>
+                  <div className="space-y-2 text-sm text-yellow-700">
+                    <p>• Os kits de alimentação são <strong>opcionais</strong> e devem ser pagos separadamente</p>
+                    <p>• O pagamento deverá ser feito <strong>diretamente na escola</strong></p>
+                    <p>• Prazo para pagamento: até <strong>3 dias úteis antes da visita</strong></p>
+                    <p>• Você pode escolher quantos kits desejar ou nenhum</p>
+                    <p>• Também é possível levar seus próprios lanches (conforme regras do parque)</p>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center pt-4 border-t border-yellow-200">
+                <p className="text-sm font-medium text-yellow-800">
+                  Para contratar os kits de alimentação, procure a secretaria da escola após confirmar sua inscrição no passeio
+                </p>
+              </div>
+            </CardContent>
+          </Card>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <Card className="card-hover border-orange-200">
@@ -642,28 +662,7 @@ function App() {
             </Card>
           </div>
 
-          <Card className="bg-yellow-50 border-yellow-200">
-            <CardContent className="p-6">
-              <div className="flex items-start space-x-3 mb-4">
-                <Shield className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold text-yellow-800 mb-2">Informações Importantes sobre Alimentação</h3>
-                  <div className="space-y-2 text-sm text-yellow-700">
-                    <p>• Os kits de alimentação são <strong>opcionais</strong> e devem ser pagos separadamente</p>
-                    <p>• O pagamento deverá ser feito <strong>diretamente na escola</strong></p>
-                    <p>• Prazo para pagamento: até <strong>3 dias úteis antes da visita</strong></p>
-                    <p>• Você pode escolher quantos kits desejar ou nenhum</p>
-                    <p>• Também é possível levar seus próprios lanches (conforme regras do parque)</p>
-                  </div>
-                </div>
-              </div>
-              <div className="text-center pt-4 border-t border-yellow-200">
-                <p className="text-sm font-medium text-yellow-800">
-                  Para contratar os kits de alimentação, procure a secretaria da escola após confirmar sua inscrição no passeio
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+     
         </div>
       </section>
 			
@@ -1070,6 +1069,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
