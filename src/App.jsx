@@ -573,6 +573,101 @@ function App() {
             </CardContent>
           </Card>
 
+		{/* Alimentação Opcional */}
+      <section id="alimentacao" className="section-padding bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Alimentação Opcional</h2>
+            <p className="text-lg text-muted-foreground">
+              Garanta sua refeição no parque com valores especiais
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <Card className="card-hover border-orange-200">
+              <CardHeader className="text-center">
+                <div className="mx-auto mb-4 p-3 bg-orange-100 rounded-full w-fit">
+                  <Utensils className="h-8 w-8 text-orange-600" />
+                </div>
+                <CardTitle className="text-orange-800">Kit Almoço Grupo</CardTitle>
+                <CardDescription>Self service até 1kg</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-2xl font-bold text-orange-600 mb-2">R$ 75,00</div>
+                <p className="text-sm text-muted-foreground mb-4">por pessoa</p>
+                <ul className="text-sm space-y-1 text-left">
+                  <li>• Self service (até 1kg)</li>
+                  <li>• Loja Veneza Sabores</li>
+                  <li>• 1 refrigerante em lata ou suco Del Valle</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="card-hover border-green-200">
+              <CardHeader className="text-center">
+                <div className="mx-auto mb-4 p-3 bg-green-100 rounded-full w-fit">
+                  <Utensils className="h-8 w-8 text-green-600" />
+                </div>
+                <CardTitle className="text-green-800">Kit Lanche 1</CardTitle>
+                <CardDescription>Opção completa</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-2xl font-bold text-green-600 mb-2">R$ 15,00</div>
+                <p className="text-sm text-muted-foreground mb-4">por pessoa</p>
+                <ul className="text-sm space-y-1 text-left">
+                  <li>• Coxinha</li>
+                  <li>• Fatia de pizza mussarela</li>
+                  <li>• Espetinho de carne ou frango</li>
+                  <li>• 1 refrigerante em lata</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="card-hover border-blue-200">
+              <CardHeader className="text-center">
+                <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
+                  <Utensils className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle className="text-blue-800">Kit Lanche 2</CardTitle>
+                <CardDescription>Hambúrguer</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-2xl font-bold text-blue-600 mb-2">R$ 20,00</div>
+                <p className="text-sm text-muted-foreground mb-4">por pessoa</p>
+                <ul className="text-sm space-y-1 text-left">
+                  <li>• Cheeseburguer</li>
+                  <li>• 1 refrigerante em lata</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-yellow-50 border-yellow-200">
+            <CardContent className="p-6">
+              <div className="flex items-start space-x-3 mb-4">
+                <Shield className="h-6 w-6 text-yellow-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-yellow-800 mb-2">Informações Importantes sobre Alimentação</h3>
+                  <div className="space-y-2 text-sm text-yellow-700">
+                    <p>• Os kits de alimentação são <strong>opcionais</strong> e devem ser pagos separadamente</p>
+                    <p>• O pagamento deverá ser feito <strong>diretamente na escola</strong></p>
+                    <p>• Prazo para pagamento: até <strong>3 dias úteis antes da visita</strong></p>
+                    <p>• Você pode escolher quantos kits desejar ou nenhum</p>
+                    <p>• Também é possível levar seus próprios lanches (conforme regras do parque)</p>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center pt-4 border-t border-yellow-200">
+                <p className="text-sm font-medium text-yellow-800">
+                  Para contratar os kits de alimentação, procure a secretaria da escola após confirmar sua inscrição no passeio
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+			
+
           {/* FORMULÁRIO DE INSCRIÇÃO - SHOW/HIDE */}
           {showForm && (
             <Card id="formulario-inscricao" className="border-orange-200 bg-orange-50/30">
@@ -975,6 +1070,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
