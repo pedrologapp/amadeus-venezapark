@@ -498,6 +498,9 @@ function App() {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Alimentação Opcional</h2>
+			  <p className="text-lg text-muted-foreground">
+              Esses são os valores do Veneza Park
+            </p>
           </div>
 
 		     <Card className="bg-yellow-50 border-yellow-200">
@@ -1073,6 +1076,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
