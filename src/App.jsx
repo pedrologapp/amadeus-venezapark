@@ -420,7 +420,7 @@ function App() {
                   <li>Biscoitos, salgadinhos, sucos de caixinha e frutas</li>
                   <li>Bolos (comemorativos ou em fatias)</li>
                   <li>Água mineral em garrafas próprias</li>
-                  <li>Refrigerantes ou bebidas alcoólicas em lata</li>
+                  <li>Refrigerantes em lata</li>
                   <li>Todos os itens devem ser transportados em bolsas ou bolsas térmicas</li>
                 </ul>
               </CardContent>
@@ -1076,6 +1076,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
